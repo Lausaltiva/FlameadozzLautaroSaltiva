@@ -1,0 +1,436 @@
+@import url('https://fonts.googleapis.com/css2? family= Inconsolata:peso@800 &family= Nanum+Gothic & family= Roboto+Condensed:wght@300 & display=swap');
+*{
+    margin:  0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 20rem auto 17rem;
+    grid-template-areas: "header header"
+                          "main main"
+                          "footer footer";
+    height: 100vh;
+}
+header {
+    grid-area: header;
+    background-color: #e7e70e ;
+}
+main {
+    grid-area: main;
+}
+footer {
+    grid-area: footer;
+    background-color: black;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto 2.4rem;
+    grid-template-areas:"seguidores pagos envios"
+                        "pie     pie    pie";}
+    /* partes principales de la pagina*/
+.header__cabeza {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    height: 2rem;
+    color: white;
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.header__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15rem;
+}
+.logo {
+    position: absolute;
+    left: 1rem;
+}
+.logo__img {
+    width: 10rem;
+}
+h1 {
+    display: inline-block;
+    font-family:  'Inconsolata', sans-serif;
+    font-size: 8rem;
+    color: black; }
+.box__search {
+    position: absolute;
+    right: 2rem;
+}
+input.src{
+    padding: 0.9rem 1rem 0.9rem 3.2rem;
+    outline: none;
+    font-size: 2rem;
+    border-radius: 1.5rem;
+    color: black;
+    border: 0.3rem solid black;
+    background:white  url(../imagenes/search-icon.png) no-repeat 0.9rem center ;
+    width: 11rem;
+    transition: all .5s;
+}
+input.src:hover{
+    width: 30rem;
+    background-color: white;
+    border-color: black;
+    box-shadow: 0 0 0.5rem black;
+}
+.header__nav {
+    display: inline;
+    position: absolute;
+    bottom: 73.6rem;
+    width: 100%;
+    color: black;
+            }
+.header__ul {
+    display: inline-flex;
+    font-size: 3rem;
+    font-family: 'Roboto+Condensed', sans-serif;
+    background-color: black;
+    bottom: 0;
+    width: 100%;
+    justify-content: center;
+    color: white;
+}
+nav{
+    justify-content: center;
+    border: solid black 1px;
+}
+nav li {
+    text-decoration: none;
+    margin: 0 2rem;
+    list-style: none;
+}
+.nav__anchor {
+    text-decoration: none;
+    color: white;
+    font-size: 2rem;
+}
+.header__search {
+    display: block;
+    justify-content: flex-start;
+    font-size: 3rem;
+    position: absolute;
+    left: 0;
+    margin: 0 1rem;
+}
+/*todas las propiedades de header full pags*/
+.main__container__sub {
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../imagenes/background-fuego.png);
+}
+.main__sub {
+    font-size: 4rem;
+    color: rgb(0 0 0 / 72%) ;
+}
+.card__container {
+    display: flex;
+    justify-content: center;
+}
+.card__stock {
+    width: 40rem;
+    padding: 1.5rem 2.5rem;
+    margin: 1.5rem;
+    background-color: #e1e1e1;
+    border-radius: 1.5rem;
+}
+.index__img{
+    width: 35rem;
+}
+.card__description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    font-family: 'roboto+condensed',sans-serif;
+}
+/* propiedades del main del index*/
+.footer__media {
+    display: none;
+}
+.footer__seguidores {
+    grid-area: seguidores;
+    color: white;
+    font-size: 2rem;
+    margin: 0 2rem;
+}
+.footer__seguidores__ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Roboto+Condensed', sans-serif;
+}
+.footer__pagos {
+    grid-area: pagos;
+    color: white;
+}
+.footer__pagos__ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Roboto+Condensed', sans-serif;
+}
+.footer__envios {
+    grid-area: envios;
+    color: white;
+}
+.footer__envios__ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Roboto+Condensed', sans-serif;
+}
+.footer__li{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.pie__pagina{
+    grid-area: pie;
+    color: white;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 4rem;
+}
+.pie__ul {
+    display: flex;
+}
+.pie__anchor {
+    margin: 0 2rem;
+    list-style: none;
+    text-decoration: none;
+    font-size: 2rem;
+    color: white;
+}
+/*todas las propiedades de footer full pags*/
+.card__productos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 25rem;
+    padding: 1.5rem 2.5rem;
+    margin: 1.5rem;
+    background-color: #e1e1e1;
+    border-radius: 1.5rem;
+    text-align: center;
+}
+.card__container__productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+/*propiedades de las cards*/
+.title__pie {
+    color: white;
+    background-color: black;
+    font-family: 'Nanum+Gothic',sans-serif;
+    margin: 0.5rem;
+    border-radius: 1rem;
+}
+.title__container {
+    display: flex;
+    justify-content: center
+}
+.quienes-somos {
+    font-size: 2rem;
+    color: white;
+    background-color: black;
+    border-radius: 1rem;
+    width: 70rem;
+    padding: 2rem;
+}
+.pie__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    margin: 3rem;
+    padding: 2rem;
+}
+/* propiedades de quienes-somos*/
+.politica-y-privacidad {
+    font-size: 3rem;
+    color: white;
+    background-color: black;
+    border-radius: 1rem;
+    width: 50rem;
+    padding: 2rem;
+    margin: 2rem;
+}
+/*propiedades de politica y privacidad*/
+.terminos-y-condiciones {
+    font-size: 3rem;
+    color: white;
+    background-color: black;
+    border-radius: 1rem;
+    width: 50rem;
+    padding: 2rem;
+    margin: 2rem;
+}
+/* propiedades de termino y condiciones*/
+.soporte {
+    font-size: 3rem;
+    color: white;
+    background-color: black;
+    border-radius: 1rem;
+    width: 50rem;
+    padding: 2rem;
+    margin: 2rem;
+}
+.anchor__soporte {
+    text-decoration: none;
+    font-size: 3rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: yellow;
+}
+.formulario {
+    font-size: 2rem;
+}
+/*medias querie mobile*/
+@media screen and (max-width:960px){
+   body{  grid-template-rows: 30rem auto 50rem;}
+    .header__nav{
+        position: absolute;
+        top: 14.7rem;
+    }
+    .header__ul{
+        display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: solid white;
+    font-size: 3rem;
+    font-family: 'Roboto+Condensed', sans-serif;
+    background-color: black;
+    bottom: 0;
+    width: 100%;
+    justify-content: center;
+    color: white;
+    }
+    .title{
+        display: none;
+    }
+    .logo__img{
+        width: 5rem;
+    }
+    .box__search{
+        position: relative;
+        right: auto;
+    }
+    input.src{
+        padding: 0.9rem 1rem 0.9rem 3.2rem;
+        outline: none;
+        font-size: 2rem;
+        border-radius: 1.5rem;
+        color: black;
+        border: 0.3rem solid black;
+        background:white  url(../imagenes/search-icon.png) no-repeat 0.9rem center ;
+        width: 20rem;
+        transition: none;
+    }
+    input.src:hover {
+        display: none;
+    }
+    /*medias del header*/
+    .card__container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .main__sub{
+        font-size: 2rem;
+    }
+    .index__img{
+        width: 25rem;
+    }  
+    .card__stock{
+        width: 30rem;
+    }
+    /*medias del main*/
+    footer{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 9rem;
+        grid-template-areas:   "seguidores seguidores"
+                                "  pagos      pagos" 
+                                "  envios     envios"
+                                "   pie        pie "; }
+    .pie__ul{
+        flex-direction: column;
+        text-align: center;
+    }   
+    /*medias del footer*/   
+    .pie__container {
+        flex-direction: column;
+        align-items: center;
+    }   
+    /*media de pie de pagina*/                 
+}
+/* media querie cancelada*/
+/*@media only screen and (min-widht:501px) and (max-widht:800px) {
+    body{ grid-template-rows: 30rem auto 18rem;}
+    .header__nav{
+        position: absolute;
+        top: 14.7rem;
+    }
+    .header__ul{
+        display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: solid white;
+    font-size: 3rem;
+    font-family: 'Roboto+Condensed', sans-serif;
+    background-color: black;
+    bottom: 0;
+    width: 100%;
+    justify-content: center;
+    color: white;
+    }
+    .box__search{
+        position: relative;
+        left: 7rem;
+    }
+    }
+    .title{
+        display: none;}
+    .logo__img{ 
+        width: 8rem;
+    }    
+    .logo{
+        left: 4rem;
+    }
+    .card__container{
+        flex-direction: column;
+        align-items: center;}
+    .main__sub{
+        font-size: 2rem;}    
+    footer{ grid-template-rows: auto 5rem;}
+    .pie__ul{
+        display: flex;
+    justify-content: center;
+    text-align-last: center;}
+    }*/
+/*media querie cancelada*/
+
+/*media querie laptos y desktop*/
+
+@media screen and (min-width: 961px){
+    .index__img{ width: 28rem;}
+    .header__nav{bottom:auto;}
+}
+
+
+
+
+  
+    
+
