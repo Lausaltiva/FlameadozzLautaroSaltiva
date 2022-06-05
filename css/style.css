@@ -23,7 +23,11 @@ main {
 }
 footer {
     grid-area: footer;
-    background-color: black;
+    background: rgb(0,0,0);
+    background: -moz-linear-gradient(180deg, rgba(0,0,0,1) 47%, rgba(0,0,0,0.9304096638655462) 66%, rgba(0,0,0,1) 100%);
+    background: -webkit-linear-gradient(180deg, rgba(0,0,0,1) 47%, rgba(0,0,0,0.9304096638655462) 66%, rgba(0,0,0,1) 100%);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 47%, rgba(0,0,0,0.9304096638655462) 66%, rgba(0,0,0,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#000000",GradientType=1);
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto 2.4rem;
@@ -225,6 +229,11 @@ nav li {
     background-color: #e1e1e1;
     border-radius: 1.5rem;
     text-align: center;
+    transition: all 2s;}
+.card__productos:hover{
+    background-color: black;
+    width: 35rem;
+    color: white;
 }
 .card__container__productos {
     display: flex;
@@ -297,6 +306,11 @@ nav li {
 }
 .formulario {
     font-size: 2rem;
+}
+/*keyframes*/
+@keyframes card{
+    0%{ opacity: 0;}
+    100%{ opacity: 1;}
 }
 /*medias querie mobile*/
 @media screen and (max-width:960px){
