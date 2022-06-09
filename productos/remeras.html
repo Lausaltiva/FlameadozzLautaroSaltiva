@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,141 +14,118 @@
 </head>
 <body>
 <header>
-    <div class="header__cabeza">
-        <p>Envios gratis a partir de $15000</p>
-    </div>
-    <div class="header__container">
-        <div class="logo">
-            <img class="logo__img" src="../imagenes/logo.png" alt="logo">
+    <div class="container-fluid">
+        <div class="row text-center text-bg-dark h25 ">
+            <p class="color-white">Envios gratis a partir de $15000</p>
         </div>
-        <div class="title">
-            <h1>FLAMEADOZZ</h1>
-        </div>
-        <div class="box__search">
-            <input type="text" name="search" placeholder="buscar" class="src" autocomplete="off">
+        <div class="row bg-yellow">
+            <div class=" col-4 col-md-2 col-xl-3 m-2 logo">
+                <img src="../imagenes/logo.png" alt="logo">
+            </div>
+            <div class="col-6 col-md-8 col-xl-8 m-2">
+                <input type="text" name="search" placeholder="buscar" class="src" autocomplete="off">
+            </div>
+            <div class="col-2 col-md-2 col-xl-1 ">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </div>
         </div>
     </div>
-    <div class="header__nav">
-        <nav>
-            <ul class="header__ul">
-                <li><a class="nav__anchor" href="../index.html">Inicio</a></li>
-                <li><a class="nav__anchor" href="./chombas.html">Chombas</a></li>
-                <li><a class="nav__anchor" href="./camperas&hoodies.html">Camperas & Hoodies</a></li>
-                <li><a class="nav__anchor" href="./pantalones&shorts.html">Pantalones & Shorts</a></li>
-                <li><a class="nav__anchor" href="./sneakers.html">Sneakers</a></li>
-                <li><a class="nav__anchor" href="./accesorios.html">Accesorios</a></li>
-        </ul>
-        </nav>
-    </div>
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand title" href="../index.html">FLAMEADOZZ</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse petite" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./remeras.html">Remeras</a>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./chombas.html">Chombas</a>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./camperas&hoodies.html">Camperas & Hoodies</a>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./pantalones&shorts.html">Pantalones & Shorts</a>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./sneakers.html">Sneakers</a>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./accesorios.html">Accesorios</a>    
+            </ul>
+          </div>
+        </div>
+      </nav>
 </header>    
-<main>
-    <section class="card__container__productos" data-aos="zoom-out-up">
-        <div class="card__productos">
-            <img src="../imagenes/stocks/remeras/cactus-jack-pink.webp" alt="cactusJackPink" width="200">
-            <div class="card__description">
-                <h2>Shirt Cactus Jack Pink</h2>
-                <span>$12000</span>
-            </div>
+<main class="productos container text-center">
+    <section class="row">
+        <div class="stock col-12 col-md-6 col-lg-3 mb-2 mt-2">
+            <img class="img-fluid img-stock" src="../imagenes/stocks/remeras/bape-remera-shark.png" alt="bape-remera-shark">
+            <p>Shirt BAPE Shark</p>
+            <button class="btn btn-dark">$10000</button>
         </div>
-        <div class="card__productos">
-            <img src="../imagenes/stocks/remeras/playboy-antisocialsocial.webp" alt="playboy-antisocialsocial" width="200">
-            <div class="card__description">
-                <h2>PlayBoy Anti Social Social club Shirt</h2>
-                <span>$18000</span>
-            </div>
+        <div class="stock col-12 col-md-6 col-lg-3 mb-2 mt-2">
+            <img class="img-fluid img-stock" src="../imagenes/stocks/remeras/cactus-jack-pink.webp" alt="cactus-jack-pink">
+            <p>Shirt Cactus Jack Pink</p>
+            <button class="btn btn-dark">$10000</button>
         </div>
-        <div class="card__productos">
-            <img src="../imagenes/stocks/remeras/bape-remera-shark.png" alt="bape-remera-shark" width="200">
-            <div class="card__description">
-                <h2>Shirt Bape Shark</h2>
-                <span>$14000</span>
-            </div>
+        <div class="stock col-12 col-md-6 col-lg-3 mb-2 mt-2">
+            <img class="img-fluid img-stock" src="../imagenes/stocks/remeras/playboy-antisocialsocial.webp" alt="playboy-antisocialsocial">
+            <p>Shirt Anti Social Social Club COLAB Playboy</p>
+            <button class="btn btn-dark">$10000</button>
         </div>
-        <div class="card__productos">
-            <img src="../imagenes/stocks/remeras/Remera-nike-icon-clash.png" alt="Remera-nike-icon-clash" width="200">
-            <div class="card__description">
-                <h2>Shirt Nike Icon Clash</h2>
-                <span>$13500</span>
-            </div>
+        <div class="stock col-12 col-md-6 col-lg-3 mb-2 mt-2">
+            <img class="img-fluid img-stock" src="../imagenes/stocks/remeras/Remera-nike-icon-clash.png" alt="Remera-nike-icon-clash">
+            <p>Shirt Nike Icon Clash</p>
+            <button class="btn btn-dark">$10000</button>
         </div>
-        <div class="card__productos">
-            <img src="../imagenes/stocks/remeras/remera-nike-space.png" alt="remera-nike-space" width="200">
-            <div class="card__description">
-                <h2>Shirt Nike Space</h2>
-                <span>$1200</span>
-            </div>
+        <div class="stock col-12 col-md-6 col-lg-3 mb-2 mt-2">
+            <img class="img-fluid img-stock" src="../imagenes/stocks/remeras/remera-nike-space.png" alt="remera-nike-space">
+            <p>Shirt Nike Space</p>
+            <button class="btn btn-dark">$10000</button>
         </div>
-        <div class="card__productos">
-            <img src="../imagenes/stocks/remeras/remera-nikexstussy-colab-white.png" alt="remera-nikexstussy-colab-white" width="180">
-            <div class="card__description">
-                <h2>Shirt Nike X Stussy Colab White</h2>
-                <span>$20000</span>
-            </div>
+        <div class="stock col-12 col-md-6 col-lg-3 mb-2 mt-2">
+            <img class="img-fluid img-stock" src="../imagenes/stocks/remeras/remera-nikexstussy-colab-white.png" alt="remera-nikexstussy-colab-white">
+            <p>Shirt Nike X Stussy white</p>
+            <button class="btn btn-dark">$10000</button>
         </div>
-        <div class="card__productos">
-            <img src="../imagenes/stocks/remeras/remera-offwhite.png" alt="remera-offwhite" width="200">
-            <div class="card__description">
-                <h2>Shirt Off white</h2>
-                <span>$14500</span>
-            </div>
+        <div class="stock col-12 col-md-6 col-lg-3 mb-2 mt-2">
+            <img class="img-fluid img-stock" src="../imagenes/stocks/remeras/remera-offwhite.png" alt="remera-offwhite">
+            <p>Shirt Off White</p>
+            <button class="btn btn-dark">$10000</button>
         </div>
-        <div class="card__productos">
-            <img src="../imagenes/stocks/remeras/remera-puma.png" alt="remera-puma" width="200">
-            <div class="card__description">
-                <h2>Shirt Puma White</h2>
-                <span>$10000</span>
-            </div>
+        <div class="stock col-12 col-md-6 col-lg-3 mb-2 mt-2">
+            <img class="img-fluid img-stock" src="../imagenes/stocks/remeras/remera-puma.png" alt="remera-puma">
+            <p>Shirt Puma White</p>
+            <button class="btn btn-dark">$10000</button>
         </div>
-        <div class="card__productos">
-            <img src="../imagenes/stocks/remeras/remera-supreme-x-thrasher.png" alt="remera-supreme-x-thrasher" width="200">
-            <div class="card__description">
-                <h2>Shirt Supreme X Thrasher Colab</h2>
-                <span>$25000</span>
-            </div>
+        <div class="stock col-12 col-md-6 col-lg-3 mb-2 mt-2">
+            <img class="img-fluid img-stock" src="../imagenes/stocks/remeras/remera-supreme-x-thrasher.png" alt="remera-supreme-x-thrasher">
+            <p>Shirt Supreme X Trasher</p>
+            <button class="btn btn-dark">$10000</button>
         </div>
-        <div class="card__productos">
-            <img src="../imagenes/stocks/remeras/remera-tenis-fila.png" alt="remera-tenis-fila" width="200">
-            <div class="card__description">
-                <h2>Shirt Fila Tennis</h2>
-                <span>$12000</span>
-            </div>
+        <div class="stock col-12 col-md-6 col-lg-3 mb-2 mt-2">
+            <img class="img-fluid img-stock" src="../imagenes/stocks/remeras/remera-tenis-fila.png" alt="remera-tenis-fila">
+            <p>Shirt Tenis Fila</p>
+            <button class="btn btn-dark">$10000</button>
         </div>
     </section>
 </main>
 <footer>
-    <div class="footer__seguidores">
-        <ul class="footer__seguidores__ul">
-             <li class="footer__li">Seguinos en</li>
-             <li style="list-style-image: url('../imagenes/instagram.png') ;" class="footer__li">Instagram</li>
-             <li style="list-style-image: url('../imagenes/facebook.png') ;" class="footer__li">Facebook</li>
-             <li style="list-style-image: url('../imagenes/twitter.png') ;" class="footer__li">Twitter</li>
-        </ul>
+    <div class="footer bg-dark text-white text-center pt-2">
+        <h4>Redes Sociales</h4>
+        <div class="iconos">
+            <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.whatsapp.com/?lang=es"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
     </div>
-    <div class="footer__pagos">
-        <ul class="footer__pagos__ul">
-             <li class="footer__li">Envios Via</li>
-             <li style="list-style-image: url('../imagenes/mercado-pago.png') ;" class="footer__li">Mercado Pago</li>
-             <li style="list-style-image: url('../imagenes/efectivo.png') ;" class="footer__li">Efectivo</li>
-             <li style="list-style-image: url('../imagenes/visa.png') ;" class="footer__li">Visa</li>
-         </ul>
-    </div>
-     <div class="footer__envios">
-        <ul class="footer__envios__ul">
-             <li class="footer__li">Envios Via</li>
-             <li style="list-style-image: url('../imagenes/oca.png') ;" class="footer__li">OCA</li>
-             <li style="list-style-image: url('../imagenes/andreani.png') ;" class="footer__li">Andreani</li>
-             <li style="list-style-image: url('../imagenes/correo-argentino.png') ;" class="footer__li">Correo Argentino</li>
-         </ul>
-    </div>
-    <div class="pie__pagina">
-        <ul class="pie__ul">
-            <li style="list-style:none ;"><a class="pie__anchor" href="../piedepagina/quienessomos.html">Quienes somos?</a></li>
-            <li style="list-style:none ;"><a class="pie__anchor" href="../piedepagina/soporte.html">Soporte</a></li>
-            <li style="list-style:none ;"><a class="pie__anchor" href="../piedepagina/politicayprivacidad.html">Politica y Privacidad</a></li>
-            <li style="list-style:none ;"><a class="pie__anchor" href="../piedepagina/terminosycondiciones.html">Terminos y condiciones</a></li>
-        </ul>
+    <div class="pie bg-dark text-white text-center p-1">
+        <a href="../piedepagina/quienessomos.html">Quienes Somos?</a>
+        <a href="../piedepagina/contacto.html">Contacto</a>
+        <a href="../piedepagina/terminosycondiciones.html">Terminos y Condiciones</a>
     </div>
 </footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 <script>
     AOS.init();
   </script>

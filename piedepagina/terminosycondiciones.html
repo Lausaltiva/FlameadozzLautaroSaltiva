@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,86 +12,107 @@
 </head>
 <body>
 <header>
-    <div class="header__cabeza">
-        <p>Envios gratis a partir de $15000</p>
-    </div>
-    <div class="header__container">
-        <div class="logo">
-            <img src="../imagenes/logo.png" alt="logo" width="100">
+        <div class="container-fluid">
+            <div class="row text-center text-bg-dark h25 ">
+                <p class="color-white">Envios gratis a partir de $15000</p>
+            </div>
+            <div class="row bg-yellow">
+                <div class="col-4 col-md-2 col-xl-3 m-2 logo">
+                    <img src="../imagenes/logo.png" alt="logo">
+                </div>
+                <div class="col-6 col-md-8 col-xl-8 m-2">
+                    <input type="text" name="search" placeholder="buscar" class="src" autocomplete="off">
+                </div>
+                <div class="col-2 col-md-2 col-xl-1 ">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+            </div>
         </div>
-        <div class="title">
-            <h1>FLAMEADOZZ</h1>
-        </div>
-        <div class="box__search">
-            <input type="text" name="search" placeholder="buscar" class="src" autocomplete="off">
-        </div>
-    </div>
-    <div class="header__nav">
-        <nav>
-            <ul class="header__ul">
-                <li><a class="nav__anchor" href="../index.html">Ir al Inicio</a></li>        
-        </ul>
-        </nav>
-    </div>
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand title" href="../index.html">FLAMEADOZZ</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse petite" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../productos/remeras.html">Remeras</a>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../productos/chombas.html">Chombas</a>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../productos/camperas&hoodies.html">Camperas & Hoodies</a>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../productos/pantalones&shorts.html">Pantalones & Shorts</a>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../productos/sneakers.html">Sneakers</a>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../productos/accesorios.html">Accesorios</a>    
+                </ul>
+              </div>
+            </div>
+          </nav>
+      <!--nav-->
 </header>    
 <main>
-    <div class="title__container">
-        <h1 class="title__pie">Terminos y condiciones</h1>
+    <div class="container-fluid">
+        <div class="row bg-dark text-white text-center border border-white">
+            <h1 class="title__pie">Terminos y condiciones</h1>
+        </div>
     </div>
-    <section class="pie__container">
-        <div class="terminos-y-condiciones">
-            <h2>ACEPTACION Y CONOCIMIENTO DE LOS TÉRMINOS Y CONDICIONES</h2>
-            <p>Las presentes disposiciones generales serán aplicables y regirán para poder operar en el sitio y/o bien hacer uso de los servicios que se ofrecen en www.flameadozz.com.ar (en adelante, indistintamente, “el sitio” y/o “FLAMEADOZZ”). El usuario de este sitio, al ingresar al mismo, acepta y declara conocer los presentes Términos y Condiciones de uso del mismo, los cuales se detallan a continuación. De no aceptar estos Términos y Condiciones deberá abstenerse a continuar operando en el sitio</p>
-        </div>
-        <div class="terminos-y-condiciones">
-            <h2>MODIFICACION DE LOS TÉRMINOS Y CONDICIONES</h2>
-            <p>La vigencia de los presentes Términos y Condiciones se mantendrá mientras se encuentren los mismos publicados en “el sitio” pudiendo los mismos ser modificados por FLAMEADOZZ sin previo aviso. En virtud de ello se recomienda al usuario que revise periódicamente los presentes Términos y Condiciones. Cualquier modificación que se introduzca estará vigente a partir de su publicación en “el sitio” y el uso del sitio con posterioridad a la modificación implica aceptación de dichos cambios por parte del usuario.</p>
-        </div>
-        <div class="terminos-y-condiciones">
-            <h2>USO DE EL SITIO</h2>
-            <p>Podrán operar en “el sitio” personas que sean capaces para contratar conforme lo establecido por el Código Civil y leyes aplicables (en adelante el usuario). No podrán hacer uso del sitio aquellas personas que no tengan dicha capacidad legal.
+    <section class="container-fluid">
+        <div class="row bg-dark text-white text-center border border-white">
+            <div class="col-12">
+                <h2>ACEPTACION Y CONOCIMIENTO DE LOS TÉRMINOS Y CONDICIONES</h2>
+                <p>Las presentes disposiciones generales serán aplicables y regirán para poder operar en el sitio y/o bien hacer uso de los servicios que se ofrecen en www.flameadozz.com.ar (en adelante, indistintamente, “el sitio” y/o “FLAMEADOZZ”). El usuario de este sitio, al ingresar al mismo, acepta y declara conocer los presentes Términos y Condiciones de uso del mismo, los cuales se detallan a continuación. De no aceptar estos Términos y Condiciones deberá abstenerse a continuar operando en el sitio</p>
+            </div>
+            <div class="col-12">
+                <h2>MODIFICACION DE LOS TÉRMINOS Y CONDICIONES</h2>
+                <p>La vigencia de los presentes Términos y Condiciones se mantendrá mientras se encuentren los mismos publicados en “el sitio” pudiendo los mismos ser modificados por FLAMEADOZZ sin previo aviso. En virtud de ello se recomienda al usuario que revise periódicamente los presentes Términos y Condiciones. Cualquier modificación que se introduzca estará vigente a partir de su publicación en “el sitio” y el uso del sitio con posterioridad a la modificación implica aceptación de dichos cambios por parte del usuario.</p>
+            </div>
+            <div class="col-12">
+             <h2>USO DE EL SITIO</h2>
+                <p>Podrán operar en “el sitio” personas que sean capaces para contratar conforme lo establecido por el Código Civil y leyes aplicables (en adelante el usuario). No podrán hacer uso del sitio aquellas personas que no tengan dicha capacidad legal.
 
                 Este sitio constituye una plataforma virtual a través de la cual cualquier usuario registrado en él puede comprar los productos que se ofrezcan en el mismo y que se encuentren disponibles, conforme las condiciones que a continuación se detallarán. La información contenida en la misma no implica recomendación ni asesoramiento de ningún tipo, siendo información de carácter de general.</p>
-        </div>
-        <div class="terminos-y-condiciones">
-            <h2>AVISOS PUBLICITARIOS Y LINKS</h2>
-            <p>En el sitio pueden existir enlaces que permitan al usuario acceder a sitios de terceros. De existir dichos enlaces, los mismos no podrán interpretarse como asociación de ningún tipo entre el sitio y dichos terceros. El usuario declara conocer que el acceso a otros sitios implicará someterse a los términos y condiciones de los mismos, que podrán ser distintos al presente.</p>
+            </div>
+            <div class="col-12">
+             <h2>AVISOS PUBLICITARIOS Y LINKS</h2>
+                <p>En el sitio pueden existir enlaces que permitan al usuario acceder a sitios de terceros. De existir dichos enlaces, los mismos no podrán interpretarse como asociación de ningún tipo entre el sitio y dichos terceros. El usuario declara conocer que el acceso a otros sitios implicará someterse a los términos y condiciones de los mismos, que podrán ser distintos al presente.</p>
+            </div>
+            <div class="col-12">
+                <h2>Voluntariedad en la entrega de datos.</h2>
+                <p>La presente Política está destinada a informar a los usuarios acerca del tratamiento de datos personales llevado adelante por FLAMEADOZZ, con el objeto que libre y voluntariamente determinen la entrega o no, de sus datos personales cuando les sean requeridos o que se puedan obtener a partir de la utilización de alguno de los servicios disponibles en el sitio.
+                    Por regla general, cuando para utilizar un servicio o acceder a cierto contenido se solicite algún dato personal, la entrega del mismo no es obligatoria, con excepción de aquellos casos donde específicamente se indicara que es un dato requerido para la prestación del servicio o el acceso al contenido.
+                    </p>
+            </div>
+            <div class="col-12">
+                <h2>Autorización de uso de la información personal</h2>
+                <p>El usuario que facilitara sus datos personales, autoriza expresamente a FLAMEADOZZ para el uso de los datos aportados con los fines aquí expuestos. Implica ello además la aceptación de todos los términos contenidos en esta Política, y en los Términos y Condiciones Generales.</p>
+            </div>
+            <div class="col-12">
+                <h2>Recolección y uso de Información </h2>
+                <p>La recolección y tratamiento de datos de carácter personal tiene por finalidad la prestación, gestión, administración, personalización, actualización y mejora de los de los servicios y contenidos puestos a disposición de los usuarios por parte de FLAMEADOZZ.</p>
+            </div>
         </div>
     </section>
 </main>
 <footer>
-    <div class="footer__seguidores">
-        <ul class="footer__seguidores__ul">
-             <li class="footer__li">Seguinos en</li>
-             <li style="list-style-image: url('../imagenes/instagram.png') ;" class="footer__li">Instagram</li>
-             <li style="list-style-image: url('../imagenes/facebook.png') ;" class="footer__li">Facebook</li>
-             <li style="list-style-image: url('../imagenes/twitter.png') ;" class="footer__li">Twitter</li>
-        </ul>
+    <div class="footer bg-dark text-white text-center pt-2">
+        <h4>Redes Sociales</h4>
+        <div class="iconos">
+            <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.whatsapp.com/?lang=es"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
     </div>
-    <div class="footer__pagos">
-        <ul class="footer__pagos__ul">
-             <li class="footer__li">Envios Via</li>
-             <li style="list-style-image: url('../imagenes/mercado-pago.png') ;" class="footer__li">Mercado Pago</li>
-             <li style="list-style-image: url('../imagenes/efectivo.png') ;" class="footer__li">Efectivo</li>
-             <li style="list-style-image: url('../imagenes/visa.png') ;" class="footer__li">Visa</li>
-         </ul>
-    </div>
-    <div class="footer__envios">
-        <ul class="footer__envios__ul">
-             <li class="footer__li">Envios Via</li>
-             <li style="list-style-image: url('../imagenes/oca.png') ;" class="footer__li">OCA</li>
-             <li style="list-style-image: url('../imagenes/andreani.png') ;" class="footer__li">Andreani</li>
-             <li style="list-style-image: url('../imagenes/correo-argentino.png') ;" class="footer__li">Correo Argentino</li>
-         </ul>
-    </div> 
-    <div class="pie__pagina">
-            <ul class="pie__ul">
-                <li style="list-style:none ;"><a class="pie__anchor" href="./quienessomos.html">Quienes somos?</a></li>
-                <li style="list-style:none ;"><a class="pie__anchor" href="./soporte.html">Soporte</a></li>
-                <li style="list-style:none ;"><a class="pie__anchor" href="./politicayprivacidad.html">Politica y Privacidad</a></li>
-                <li style="list-style:none ;"><a class="pie__anchor" href="./terminosycondiciones.html">Terminos y condiciones</a></li>
-            </ul>
+    <div class="pie bg-dark text-white text-center p-1">
+        <a href="./quienessomos.html">Quienes Somos?</a>
+        <a href="./contacto.html">Contacto</a>
+        <a href="./terminosycondiciones.html">Terminos y Condiciones</a>
     </div>
 </footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>
