@@ -1,0 +1,25 @@
+.footer { height: 6rem;}
+.iconos a { 
+    text-decoration: none;
+    color: white;
+    margin: 1rem;
+    font-size: 2rem;
+  }
+  .iconos a i:hover{
+    color:yellow;
+    transform: scale(1.1);
+    transition: ease-in-out .1s;  
+}
+.pie {
+    height: 2rem;
+}
+.pie a {
+    font-size: 1rem;
+    text-decoration: none;
+    color: white;
+    padding-right: 1rem;
+}
+.pie a:hover{
+    color: yellow;
+    transform: scale(1.1);
+}

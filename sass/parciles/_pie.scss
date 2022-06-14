@@ -1,0 +1,18 @@
+.anchor-contacto {
+    text-decoration: none;
+    color: white;
+    margin: 1rem;
+    font-size: 2rem;
+}
+.anchor-contacto:hover{
+    color:yellow;
+    transform: scale(1.1);
+    transition: ease-in-out .1s;  
+}
+
+/*medias queries*/
+@media screen and (max-width:768px){
+input.src{
+     width: 10rem;}
+    .logo{text-align: center;}
+}
