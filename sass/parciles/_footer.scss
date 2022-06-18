@@ -1,25 +1,26 @@
-.footer { height: 6rem;}
-.iconos a { 
-    text-decoration: none;
-    color: white;
-    margin: 1rem;
-    font-size: 2rem;
+.footer { height: 6rem;
+    &__iconos a { 
+        text-decoration: none;
+        color: white;
+        margin: 1rem;
+        font-size: 2rem;
+    }
+    &__iconos a i:hover{
+      color:yellow;
+      transform: scale(1.1);
+      transition: ease-in-out .1s;  
   }
-  .iconos a i:hover{
-    color:yellow;
-    transform: scale(1.1);
-    transition: ease-in-out .1s;  
 }
 .pie {
     height: 2rem;
-}
-.pie a {
-    font-size: 1rem;
-    text-decoration: none;
-    color: white;
-    padding-right: 1rem;
-}
-.pie a:hover{
-    color: yellow;
-    transform: scale(1.1);
+    &__items {
+        font-size: 1rem;
+        text-decoration: none;
+        color: white;
+        padding-right: 1rem;
+    }
+    &__items:hover{
+        color: yellow;
+        transform: scale(1.1);
+    }
 }

@@ -1,26 +1,29 @@
-.bg-yellow {
-    background-color: yellow }
-.h25{
+.header__cabeza{
     height: 25px;}
-.col-xl-3 { text-align: right;}
-.col-xl-3 img{width: 5rem;  }
-
-input.src{
-    padding: 0.9rem 1rem 0.9rem 3.2rem;
-    outline: none;
-    border-radius: 1.5rem;
-    color: black;
-    border: 0.3rem solid black;
-    background:white  url(../imagenes/search-icon.png) no-repeat 0.9rem center ;
-    width: 30rem;
-    height: 3rem;
+.header {
+    background-color: yellow ;
+    &__logo { text-align: right;
+        & img{width: 5rem;}
+    }
+    &__search{ align-self: center;    text-align: -webkit-center;
+        input.src{
+            padding: 0.9rem 1rem 0.9rem 3.2rem;
+            outline: none;
+            border-radius: 1.5rem;
+            color: black;
+            border: 0.3rem solid black;
+            background:white  url(../imagenes/search-icon.png) no-repeat 0.9rem center ;
+            width: 30rem;
+            height: 3rem;}
+    }
+    &__shop {width: 5%; align-self: center;}
 }
-.col-xl-8 { align-self: center;    text-align: -webkit-center;}
-.col-xl-1 {width: 5%; align-self: center;}
-.petite {     font-variant: petite-caps; max-width: max-content;}
-.title { font-family: Inconsolata;     -webkit-text-stroke: thin;}
-nav a:hover{
-    color: yellow;
-    transform: scale(1.1);
-    transition: ease-in-out .1s; 
+.navbar {
+    &__title { font-family: Inconsolata;     -webkit-text-stroke: thin;}
+    &__items {     font-variant: petite-caps; max-width: max-content;}
+    & a:hover{
+        color: yellow;
+        transform: scale(1.1);
+        transition: ease-in-out .1s; 
+    }
 }
