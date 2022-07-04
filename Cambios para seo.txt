@@ -1,0 +1,7 @@
+Cambios realizados para el seo
+-Cambie la mayoria de imagenes png a jpg
+-comprimi las imagenes para mayor rendimiento
+-cambie los h1 dejando solamente 1 por html y dandole a los demas otra etiqueta h correspondiente
+-cambie titulos a todos los html
+-agrege meta descp y kw
+-las demas coas para hacer como el orden de la pagina ya los tenia realizados desde antes
