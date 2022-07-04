@@ -1,14 +1,13 @@
 .anchor-contacto {
-    text-decoration: none;
-    color: white;
+    color: map-get($colores,"blanco");
     margin: 1rem;
-    font-size: 2rem;
+    @include items
 }
 .anchor-contacto:hover{
-    color:yellow;
-    transform: scale(1.1);
+    @extend .pie__items:hover ;
     transition: ease-in-out .1s;  
 }
+    
 
 /*medias queries*/
 @media screen and (max-width:768px){

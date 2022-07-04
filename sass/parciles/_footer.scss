@@ -1,13 +1,11 @@
 .footer { height: 6rem;
     &__iconos a { 
-        text-decoration: none;
-        color: white;
+        @include items
+        color: map-get($colores,"blanco");
         margin: 1rem;
-        font-size: 2rem;
     }
     &__iconos a i:hover{
-      color:yellow;
-      transform: scale(1.1);
+     @extend .pie__items:hover;
       transition: ease-in-out .1s;  
   }
 }
@@ -16,11 +14,11 @@
     &__items {
         font-size: 1rem;
         text-decoration: none;
-        color: white;
+        color: map-get($colores,"blanco");
         padding-right: 1rem;
     }
     &__items:hover{
-        color: yellow;
+        color: map-get($colores,"bg-yellow");
         transform: scale(1.1);
     }
 }

@@ -1,11 +1,16 @@
-$blancohumo:#ffffffbd;
 
-.encabezado {background-image: url(../imagenes/background-fuego.png); 
-    &__subtitle {font-size: 2rem; color: $blancohumo; font-family: fantasy; margin: 0.5rem;   }
+.encabezado {background-image: url(../imagenes/background-fuego.jpg); 
+    &__subtitle {
+        @include items
+        color: map-get($colores,"blancohumo"); 
+        font-family: fantasy; 
+        margin: 0.5rem;   }
  }
  .carousel-inner{ 
      & img {max-width: 40rem;  }
-     .carousel-item {     text-align: -webkit-center;}
+     .carousel-item {   
+          text-align: 
+        -webkit-center;}
      .hoodie { height: 35rem;}
  }
 /*scss de produtos*/
