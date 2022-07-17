@@ -2,10 +2,10 @@
     height: 25px;}
 .header {
     background-color: map-get($colores, "bg-yellow");
-    &__logo { text-align: right;
+    &__logo { text-align:  center;
         & img{width: 5rem;}
     }
-    &__search{ align-self: center;    text-align: -webkit-center;
+    &__search{ align-self: center; 
         input.src{
             padding: 0.9rem 1rem 0.9rem 3.2rem;
             outline: none;
@@ -13,7 +13,7 @@
             color: black;
             border: 0.3rem solid black;
             background: white url(../imagenes/search-icon.jpg) no-repeat 0.9rem center;
-            width: 30rem;
+            width: 45rem;
             height: 3rem;}
     }
     &__shop {width: 5%; align-self: center;}

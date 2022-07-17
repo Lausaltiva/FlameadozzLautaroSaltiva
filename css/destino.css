@@ -10,12 +10,11 @@
 .header {
   background-color: #ffff12; }
   .header__logo {
-    text-align: right; }
+    text-align: center; }
     .header__logo img {
       width: 5rem; }
   .header__search {
-    align-self: center;
-    text-align: -webkit-center; }
+    align-self: center; }
     .header__search input.src {
       padding: 0.9rem 1rem 0.9rem 3.2rem;
       outline: none;
@@ -23,7 +22,7 @@
       color: black;
       border: 0.3rem solid black;
       background: white url(../imagenes/search-icon.jpg) no-repeat 0.9rem center;
-      width: 30rem;
+      width: 45rem;
       height: 3rem; }
   .header__shop {
     width: 5%;
@@ -62,7 +61,11 @@
 
 /*scss de produtos*/
 .img-stock {
-  max-width: 10rem; }
+  max-width: 10rem;
+  max-height: 10rem; }
+
+.footer__propiedades {
+  bottom: 0; }
 
 .footer {
   height: 6rem; }
@@ -75,7 +78,7 @@
     transition: ease-in-out .1s; }
 
 .pie {
-  height: 2rem; }
+  height: 3.5rem; }
   .pie__items {
     font-size: 1rem;
     text-decoration: none;
@@ -97,6 +100,6 @@
 /*medias queries*/
 @media screen and (max-width: 768px) {
   input.src {
-    width: 10rem; }
+    display: none; }
   .logo {
     text-align: center; } }
