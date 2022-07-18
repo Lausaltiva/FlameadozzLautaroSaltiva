@@ -57,11 +57,10 @@
   text-align: -webkit-center; }
 
 .carousel-inner .hoodie {
-  height: 35rem; }
+  max-height: 40rem; }
 
 /*scss de produtos*/
 .img-stock {
-  max-width: 10rem;
   max-height: 10rem; }
 
 .footer__propiedades {

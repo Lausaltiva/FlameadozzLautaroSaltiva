@@ -11,10 +11,9 @@
      .carousel-item {   
           text-align: 
         -webkit-center;}
-     .hoodie { height: 35rem;}
+    .hoodie { max-height: 40rem;}
  }
 /*scss de produtos*/
 .img-stock {
-    max-width: 10rem;
-    max-height: 10rem;
+     max-height: 10rem;
 }
